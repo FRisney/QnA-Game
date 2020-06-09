@@ -8,3 +8,4 @@
 self_modulate = Color( 1, 1, 1, 1 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
+type = 1
