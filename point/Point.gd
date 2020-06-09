@@ -13,4 +13,4 @@ func _ready() -> void:
 	# Desenha a linha ate o Node pai
 	# O Node pai testa na coordenada (0,0)
 	# Entao desenha de (0,0) ate este Node
-	if not Engine.editor_hint: $_anim.play("out")
+#	if not Engine.editor_hint: $_anim.play("out")
