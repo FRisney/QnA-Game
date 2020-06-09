@@ -1,0 +1,58 @@
+[gd_scene format=2]
+
+[node name="PainelPerguntas" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer"]
+margin_bottom = 12.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/ScrollContainer"]
+margin_right = 4.0
+margin_bottom = 8.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer"]
+margin_right = 4.0
+margin_bottom = 8.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_right = 4.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 4.0
+margin_right = 4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 4.0
+margin_right = 4.0
+margin_bottom = 8.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_right = 4.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 4.0
+margin_right = 4.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 4.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 4.0
+margin_right = 4.0
