@@ -120,6 +120,7 @@ margin_bottom = 111.0
 focus_next = NodePath("../Button2")
 focus_previous = NodePath("../Button2")
 size_flags_vertical = 3
+action_mode = 0
 keep_pressed_outside = true
 shortcut = SubResource( 4 )
 
@@ -158,6 +159,7 @@ margin_bottom = 241.0
 focus_next = NodePath("../Button")
 focus_previous = NodePath("../Button")
 size_flags_vertical = 3
+action_mode = 0
 keep_pressed_outside = true
 shortcut = SubResource( 6 )
 
@@ -191,3 +193,5 @@ text = "aqui vai o texto da alternativa a"
 align = 3
 valign = 1
 autowrap = true
+[connection signal="pressed" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]

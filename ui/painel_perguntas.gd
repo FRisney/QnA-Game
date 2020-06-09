@@ -29,3 +29,11 @@ func _on_finished_animation(animation_name: String):
 
 func _on_finished_questions(data: Dictionary):
 	pass
+
+
+func _on_Button_pressed() -> void:
+	Events.emit_signal("changed_choice", 0)
+
+
+func _on_Button2_pressed() -> void:
+	Events.emit_signal("changed_choice", 1)
