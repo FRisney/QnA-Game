@@ -20,7 +20,7 @@ func _on_started_tension():
 func _on_changed_destination():
 	Audio.get_node("Resposta").play()
 
-func _on_changed_choice():
+func _on_changed_choice(choice: int):
 	Audio.get_node("Alternativa").play()
 
 
