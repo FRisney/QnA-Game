@@ -9,42 +9,74 @@
 
 [node name="P" parent="." instance=ExtResource( 1 )]
 position = Vector2( 0, 523 )
+z_index = 0
+z_as_relative = true
 
 [node name="A" parent="P" instance=ExtResource( 1 )]
 position = Vector2( -320, 565 )
+z_index = 0
+z_as_relative = true
 
 [node name="A" parent="P/A" instance=ExtResource( 4 )]
 position = Vector2( -256, 512 )
+z_index = 0
+z_as_relative = true
 
 [node name="B" parent="P/A" instance=ExtResource( 1 )]
 position = Vector2( 64, 704 )
+z_index = 0
+z_as_relative = true
 
 [node name="A" parent="P/A/B" instance=ExtResource( 1 )]
 position = Vector2( -384, 512 )
+z_index = 0
+z_as_relative = true
 
 [node name="A" parent="P/A/B/A" instance=ExtResource( 2 )]
 position = Vector2( -128, 512 )
+z_index = 0
+z_as_relative = true
 
 [node name="B" parent="P/A/B/A" instance=ExtResource( 4 )]
 position = Vector2( 128, 512 )
+z_index = 0
+z_as_relative = true
 
 [node name="B" parent="P/A/B" instance=ExtResource( 3 )]
 position = Vector2( 128, 512 )
+z_index = 0
+z_as_relative = true
 
 [node name="B" parent="P" instance=ExtResource( 1 )]
 position = Vector2( 320, 565 )
+z_index = 0
+z_as_relative = true
 
 [node name="A" parent="P/B" instance=ExtResource( 3 )]
 position = Vector2( -64, 512 )
+z_index = 0
+z_as_relative = true
 
 [node name="B" parent="P/B" instance=ExtResource( 1 )]
 position = Vector2( 256, 640 )
+z_index = 0
+z_as_relative = true
 
 [node name="A" parent="P/B/B" instance=ExtResource( 2 )]
 position = Vector2( -256, 384 )
+z_index = 0
+z_as_relative = true
 
 [node name="B" parent="P/B/B" instance=ExtResource( 4 )]
 position = Vector2( 0, 384 )
+z_index = 0
+z_as_relative = true
+
+[node name="RemoteCar" type="RemoteTransform2D" parent="P"]
+position = Vector2( 0, -523 )
 
 [node name="Track" type="Line2D" parent="."]
+z_as_relative = false
+points = PoolVector2Array( 0, 0, 0, 0 )
 width = 20.0
+default_color = Color( 0.4, 1, 0.760784, 1 )

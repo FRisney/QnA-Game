@@ -9,5 +9,5 @@ func _ready() -> void:
 	# Declarar o tipo para pergunta
 	type = 0
 	# Guardar o caminho para as alternativas
-	path_alternativas.append(find_node("A").get_path())
-	path_alternativas.append(find_node("B").get_path())
+	path_alternativas.append(get_node("A").get_path())
+	path_alternativas.append(get_node("B").get_path())

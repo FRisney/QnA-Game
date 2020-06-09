@@ -17,10 +17,10 @@ func _on_started_tension():
 	Audio.get_node("Tensao").play()
 
 
-func _on_changed_destination():
+func _on_changed_destination(_data: Dictionary):
 	Audio.get_node("Resposta").play()
 
-func _on_changed_choice(choice: int):
+func _on_changed_choice(_choice: int):
 	Audio.get_node("Alternativa").play()
 
 

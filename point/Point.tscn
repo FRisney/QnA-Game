@@ -36,6 +36,8 @@ tracks/0/keys = {
 }
 
 [node name="Point" type="Sprite"]
+z_index = 2
+z_as_relative = false
 script = ExtResource( 2 )
 
 [node name="_editor" type="Node2D" parent="."]
