@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://audio/tension.wav" type="AudioStream" id=1]
+[ext_resource path="res://audio/bgm.ogg" type="AudioStream" id=2]
+[ext_resource path="res://audio/resposta.wav" type="AudioStream" id=3]
+[ext_resource path="res://audio/alternativa.wav" type="AudioStream" id=4]
+
+[node name="Audio" type="Node"]
+
+[node name="Musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+bus = "Musica"
+
+[node name="Resposta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "Resposta"
+
+[node name="Alternativa" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "Alternativa"
+
+[node name="Tensao" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+bus = "Tensao"
