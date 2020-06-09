@@ -24,6 +24,10 @@ config/name="LGPD"
 run/main_scene="res://main/MAIN.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Events="*res://main/signal_sinleton.gd"
+
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]
