@@ -60,7 +60,7 @@ func _physics_process(_delta: float) -> void:
 			remote_car.set_global_position(prevpos)
 			parent = dest
 			dest.get_node("_anim").play("in")
-			data = {"decl": dest.declaracao} if dest.type != 0 else {"per": dest.pergunta, "alt_a": dest.alternativaA, "alt_b": dest.alternativaB}
+			data = {"type": 1, "decl": dest.declaracao} if dest.type != 0 else {"type": 0, "per": dest.pergunta, "alt_a": dest.alternativaA, "alt_b": dest.alternativaB}
 			Events.emit_signal("changed_destination", data)
 
 

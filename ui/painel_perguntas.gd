@@ -20,11 +20,14 @@ func _on_changed_destination(data: Dictionary):
 
 func _on_finished_animation(animation_name: String):
 	if animation_name == "out":
-		label_pergunta.text = text.per
-		if text.has("alt_a") and text.has("alt_b"):
-			label_alternativa_a.text = text.alt_a
-			label_alternativa_b.text = text.alt_b
-		anim_panel.play("in")
+		match text.type:
+			0:
+				label_pergunta.text = text.per
+				label_alternativa_a.text = text.alt_a
+				label_alternativa_b.text = text.alt_b
+				anim_panel.play("in")
+			1:
+				label_pergunta.text = text.decl
 
 
 func _on_finished_questions(data: Dictionary):

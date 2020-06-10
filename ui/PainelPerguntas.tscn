@@ -7,7 +7,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "in"
-length = 0.3
+length = 0.7
 tracks/0/type = "value"
 tracks/0/path = NodePath("Panel:modulate")
 tracks/0/interp = 1
@@ -15,7 +15,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.7 ),
 "transitions": PoolRealArray( 0.189465, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
@@ -23,7 +23,6 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "out"
-length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Panel:modulate")
 tracks/0/interp = 1
@@ -31,7 +30,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 0.189465, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -60,9 +59,6 @@ anims/out = SubResource( 2 )
 anchor_left = 0.56
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 24.0
-margin_right = -24.0
-margin_bottom = -24.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -77,12 +73,12 @@ __meta__ = {
 }
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer"]
-margin_right = 400.0
-margin_bottom = 518.0
+margin_right = 423.0
+margin_bottom = 564.0
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/ScrollContainer"]
-margin_right = 400.0
-margin_bottom = 518.0
+margin_right = 423.0
+margin_bottom = 564.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/margin_right = 16
@@ -93,21 +89,21 @@ custom_constants/margin_bottom = 16
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer"]
 margin_left = 16.0
 margin_top = 16.0
-margin_right = 384.0
-margin_bottom = 502.0
+margin_right = 407.0
+margin_bottom = 548.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
-margin_right = 368.0
-margin_bottom = 241.0
+margin_right = 391.0
+margin_bottom = 264.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="LaP" type="Label" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
-margin_right = 284.0
-margin_bottom = 241.0
+margin_right = 307.0
+margin_bottom = 264.0
 size_flags_horizontal = 7
 size_flags_vertical = 5
 text = "aqui vai o texto da pergunta"
@@ -116,24 +112,24 @@ valign = 1
 autowrap = true
 
 [node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
-margin_left = 288.0
-margin_right = 368.0
-margin_bottom = 241.0
+margin_left = 311.0
+margin_right = 391.0
+margin_bottom = 264.0
 size_flags_vertical = 5
 texture = ExtResource( 3 )
 stretch_mode = 6
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
-margin_top = 245.0
-margin_right = 368.0
-margin_bottom = 486.0
+margin_top = 268.0
+margin_right = 391.0
+margin_bottom = 532.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 18
 
 [node name="Button" type="Button" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer"]
-margin_right = 368.0
-margin_bottom = 111.0
+margin_right = 391.0
+margin_bottom = 123.0
 focus_next = NodePath("../Button2")
 focus_previous = NodePath("../Button2")
 size_flags_vertical = 3
@@ -151,17 +147,17 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button/HBoxContainer"]
-margin_top = 15.0
+margin_top = 21.0
 margin_right = 80.0
-margin_bottom = 95.0
+margin_bottom = 101.0
 size_flags_vertical = 4
 texture = ExtResource( 1 )
 stretch_mode = 4
 
 [node name="LaAltA" type="Label" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button/HBoxContainer"]
 margin_left = 84.0
-margin_right = 368.0
-margin_bottom = 111.0
+margin_right = 391.0
+margin_bottom = 123.0
 size_flags_horizontal = 3
 size_flags_vertical = 5
 text = "aqui vai o texto da alternativa a"
@@ -170,9 +166,9 @@ valign = 1
 autowrap = true
 
 [node name="Button2" type="Button" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer"]
-margin_top = 129.0
-margin_right = 368.0
-margin_bottom = 241.0
+margin_top = 141.0
+margin_right = 391.0
+margin_bottom = 264.0
 focus_next = NodePath("../Button")
 focus_previous = NodePath("../Button")
 size_flags_vertical = 3
@@ -191,7 +187,7 @@ __meta__ = {
 
 [node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button2/HBoxContainer2"]
 margin_right = 80.0
-margin_bottom = 112.0
+margin_bottom = 123.0
 size_flags_horizontal = 0
 size_flags_vertical = 5
 texture = ExtResource( 2 )
@@ -202,8 +198,8 @@ __meta__ = {
 
 [node name="LaAltB" type="Label" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button2/HBoxContainer2"]
 margin_left = 84.0
-margin_right = 368.0
-margin_bottom = 112.0
+margin_right = 391.0
+margin_bottom = 123.0
 size_flags_horizontal = 3
 size_flags_vertical = 5
 text = "aqui vai o texto da alternativa a"
