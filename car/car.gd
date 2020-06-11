@@ -13,6 +13,7 @@ var move_speed: = 50.0
 var rot_speed: = 0.2
 var alt_sel: = 0
 var trk_point: = 0
+var _first: bool
 
 
 func _ready() -> void:
@@ -24,12 +25,16 @@ func _ready() -> void:
 		remote_car.rotation = parent.global_position.angle_to_point(remote_car.global_position)
 		remote_car.set_remote_node(get_path())
 		parent.get_node("_anim").play("in")
-		data = {"per": dest.pergunta,	"alt_a": dest.alternativaA,	"alt_b": dest.alternativaB, "type": dest.type}
-		dest.get_node("_anim").play("in")
-		Events.emit_signal("changed_destination", data)
+		_first = true
+		data = {"first": true, "per": parent.pergunta,	"alt_a": parent.alternativaA,	"alt_b": parent.alternativaB, "type": dest.type}
+		
 
 
 func _physics_process(_delta: float) -> void:
+	if parent.name == "P" and _first:
+		_first = false
+		parent.get_node("_anim").play("in")
+		Events.emit_signal("changed_destination", data)
 	var dist = floor(remote_car.get_position().distance_to(Vector2.ZERO))
 	if (dist as int) % 5 == 0:
 		if dist == 100:
