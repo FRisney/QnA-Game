@@ -17,6 +17,7 @@ var _first: bool
 
 
 func _ready() -> void:
+# warning-ignore:return_value_discarded
 		Events.connect("changed_choice",self, "_on_changed_choice")
 		trk_point = trk.points.size()
 #		remote_car = remote_car_scene.instance()
