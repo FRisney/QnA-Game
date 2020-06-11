@@ -18,7 +18,7 @@ z_index = 0
 z_as_relative = true
 
 [node name="A" parent="P/A" instance=ExtResource( 4 )]
-position = Vector2( -256, 512 )
+position = Vector2( -216, 336 )
 z_index = 0
 z_as_relative = true
 
@@ -33,17 +33,17 @@ z_index = 0
 z_as_relative = true
 
 [node name="A" parent="P/A/B/A" instance=ExtResource( 2 )]
-position = Vector2( -128, 512 )
+position = Vector2( -128, 344 )
 z_index = 0
 z_as_relative = true
 
 [node name="B" parent="P/A/B/A" instance=ExtResource( 4 )]
-position = Vector2( 128, 512 )
+position = Vector2( 128, 344 )
 z_index = 0
 z_as_relative = true
 
 [node name="B" parent="P/A/B" instance=ExtResource( 3 )]
-position = Vector2( 128, 512 )
+position = Vector2( 120, 344 )
 z_index = 0
 z_as_relative = true
 
@@ -53,7 +53,7 @@ z_index = 0
 z_as_relative = true
 
 [node name="A" parent="P/B" instance=ExtResource( 3 )]
-position = Vector2( -64, 512 )
+position = Vector2( -64, 384 )
 z_index = 0
 z_as_relative = true
 
@@ -63,7 +63,7 @@ z_index = 0
 z_as_relative = true
 
 [node name="A" parent="P/B/B" instance=ExtResource( 2 )]
-position = Vector2( -256, 384 )
+position = Vector2( -208, 320 )
 z_index = 0
 z_as_relative = true
 

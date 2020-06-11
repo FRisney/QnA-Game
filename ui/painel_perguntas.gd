@@ -11,8 +11,6 @@ func _ready() -> void:
 # warning-ignore:return_value_discarded
 	Events.connect("changed_destination", self, "_on_changed_destination")
 # warning-ignore:return_value_discarded
-	Events.connect("finished_questions", self,"_on_finished_questions")
-# warning-ignore:return_value_discarded
 	anim_panel.connect("animation_finished", self, "_on_finished_animation")
 
 
@@ -37,10 +35,6 @@ func _on_finished_animation(animation_name: String):
 				anim_panel.play("in")
 			1:
 				label_pergunta.text = data.decl
-
-
-func _on_finished_questions(_data: Dictionary):
-	pass
 
 
 func _on_Button_pressed() -> void:

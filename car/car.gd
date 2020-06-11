@@ -13,7 +13,8 @@ var move_speed: = 50.0
 var rot_speed: = 0.2
 var alt_sel: = 0
 var trk_point: = 0
-var _first: bool
+var _first: = true
+var _finished: = false
 
 
 func _ready() -> void:
@@ -26,7 +27,6 @@ func _ready() -> void:
 		remote_car.rotation = parent.global_position.angle_to_point(remote_car.global_position)
 		remote_car.set_remote_node(get_path())
 		parent.get_node("_anim").play("in")
-		_first = true
 		data = {"first": true, "per": parent.pergunta,	"alt_a": parent.alternativaA,	"alt_b": parent.alternativaB, "type": dest.type}
 		
 
@@ -53,8 +53,9 @@ func _physics_process(_delta: float) -> void:
 	else:
 		prevpos = remote_car.get_global_position()
 		parent = remote_car.get_parent()
-		if parent.type != 0:
-			data = {"decl": parent.declaracao}
+		if parent.type != 0 and  not _finished:
+			_finished = true
+			data = {"type": parent.type, "decl": parent.declaracao}
 			Events.emit_signal("finished_questions", data)
 		else:
 			dest = parent.get_node_or_null(parent.path_alternativas[alt_sel])
