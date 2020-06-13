@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://ui/final.gd" type="Script" id=1]
+[ext_resource path="res://theme.tres" type="Theme" id=2]
 
 [sub_resource type="Animation" id=1]
 resource_name = "SETUP"
@@ -163,6 +164,7 @@ anchor_left = 0.279906
 anchor_right = 0.719906
 anchor_bottom = 1.0
 margin_right = 0.00012207
+theme = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -184,9 +186,9 @@ __meta__ = {
 }
 
 [node name="TipoFinal" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
-margin_top = 141.0
+margin_top = 111.0
 margin_right = 692.0
-margin_bottom = 189.0
+margin_bottom = 219.0
 size_flags_horizontal = 3
 size_flags_vertical = 6
 text = "Sucesso
@@ -196,9 +198,9 @@ align = 1
 valign = 1
 
 [node name="Declaracao" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
-margin_top = 492.0
+margin_top = 482.0
 margin_right = 692.0
-margin_bottom = 506.0
+margin_bottom = 516.0
 size_flags_horizontal = 3
 size_flags_vertical = 6
 text = "Declaracao de final"

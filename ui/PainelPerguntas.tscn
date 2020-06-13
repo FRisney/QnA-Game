@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://ui/left-arrow.png" type="Texture" id=1]
 [ext_resource path="res://ui/right-arrow.png" type="Texture" id=2]
 [ext_resource path="res://ui/question.png" type="Texture" id=3]
 [ext_resource path="res://ui/painel_perguntas.gd" type="Script" id=4]
+[ext_resource path="res://theme.tres" type="Theme" id=5]
 
 [sub_resource type="Animation" id=1]
 resource_name = "SETUP"
@@ -75,6 +76,7 @@ anims/out = SubResource( 3 )
 anchor_left = 0.56
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
