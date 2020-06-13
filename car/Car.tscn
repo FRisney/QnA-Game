@@ -73,6 +73,6 @@ offset_h = 0.45
 drag_margin_left = 1.0
 
 [node name="_visual" type="Sprite" parent="."]
-scale = Vector2( 0.125, 0.125 )
+scale = Vector2( 0.187, 0.187 )
 z_index = 1
 texture = ExtResource( 1 )
