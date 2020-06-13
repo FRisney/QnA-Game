@@ -51,6 +51,7 @@ z_as_relative = false
 z_index = -1
 z_as_relative = false
 points = PoolVector2Array( 0, 0, 0, 0 )
+default_color = Color( 0.768627, 0.768627, 0.768627, 1 )
 
 [node name="_anim" type="AnimationPlayer" parent="."]
 autoplay = "out"

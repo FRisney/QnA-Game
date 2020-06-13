@@ -1,4 +1,4 @@
-extends Sprite
+extends Node2D
 
 
 onready var remote_car: RemoteTransform2D = get_node_or_null("../Mapa/P/RemoteCar")
