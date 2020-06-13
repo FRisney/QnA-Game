@@ -9,6 +9,10 @@ signal finished_questions(data)
 signal changed_choice(choice)
 # warning-ignore:unused_signal
 signal started_tension
+# warning-ignore:unused_signal
+signal menu_exited
+# warning-ignore:unused_signal
+signal map_restarted
 
 
 func _ready() -> void:
@@ -26,6 +30,7 @@ func _on_started_tension():
 
 func _on_changed_destination(data: Dictionary):
 	if not data.has("first"): Audio.get_node("Resposta").play()
+
 
 func _on_changed_choice(_choice: int):
 	Audio.get_node("Alternativa").play()

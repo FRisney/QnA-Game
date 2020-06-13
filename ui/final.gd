@@ -16,3 +16,12 @@ func _on_finished_questions(data: Dictionary):
 		3: tipo.text = "Alerta"
 	declaracao.text = data.decl
 	$_anim.play("trans")
+
+
+func _on_Reiniciar_pressed():
+	$_anim.play("out")
+	Events.emit_signal("map_restarted")
+
+
+func _on_Sair_pressed():
+	get_tree().quit()

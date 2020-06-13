@@ -5,7 +5,6 @@
 [ext_resource path="res://point/Point.tscn" type="PackedScene" id=3]
 
 [node name="Sucesso" instance=ExtResource( 3 )]
-self_modulate = Color( 1, 1, 1, 1 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 type = 1
