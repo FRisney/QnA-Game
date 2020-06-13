@@ -1,4 +1,4 @@
-extends Sprite
+extends Node2D
 
 export(int, "Pergunta", "Sucesso", "Fracasso", "Alerta") var type: int
 

@@ -3,8 +3,8 @@ extends Sprite
 
 onready var remote_car: RemoteTransform2D = get_node_or_null("../Mapa/P/RemoteCar")
 onready var trk: Line2D = get_node_or_null("../Mapa/Track")
-onready var parent: Sprite = get_node_or_null("../Mapa/P")
-onready var dest: Sprite = get_node_or_null("../Mapa/P")
+onready var parent: Node2D = get_node_or_null("../Mapa/P")
+onready var dest: Node2D = get_node_or_null("../Mapa/P")
 var data: Dictionary
 var prevpos: Vector2
 var newpos: Vector2

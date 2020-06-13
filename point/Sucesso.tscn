@@ -5,6 +5,8 @@
 [ext_resource path="res://point/Point.tscn" type="PackedScene" id=3]
 
 [node name="Sucesso" instance=ExtResource( 3 )]
-texture = ExtResource( 1 )
 script = ExtResource( 2 )
 type = 1
+
+[node name="_visual" parent="." index="1"]
+texture = ExtResource( 1 )
