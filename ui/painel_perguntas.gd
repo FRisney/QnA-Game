@@ -34,7 +34,9 @@ func _on_finished_animation(animation_name: String):
 				label_alternativa_b.text = data.alt_b
 				anim_panel.play("in")
 			1:
-				label_pergunta.text = data.decl
+				anim_panel.play("end")
+				Events.emit_signal("cam_uncentered")
+#				label_pergunta.text = data.decl
 
 
 func _on_Button_pressed() -> void:
