@@ -12,6 +12,8 @@ signal started_tension
 # warning-ignore:unused_signal
 signal menu_exited
 # warning-ignore:unused_signal
+signal credits_opened
+# warning-ignore:unused_signal
 signal map_restarted
 # warning-ignore:unused_signal
 signal cam_uncentered

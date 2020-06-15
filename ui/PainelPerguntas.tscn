@@ -21,7 +21,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=2]
 resource_name = "end"
 tracks/0/type = "bezier"
 tracks/0/path = NodePath("Panel:margin_left")
@@ -44,7 +44,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1 )
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 length = 0.7
 tracks/0/type = "value"
 tracks/0/path = NodePath("Panel:modulate")
@@ -71,7 +71,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Panel:modulate")
 tracks/0/interp = 1
@@ -97,17 +97,17 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="InputEventAction" id=4]
+[sub_resource type="InputEventAction" id=5]
 action = "alt_a"
 
-[sub_resource type="ShortCut" id=5]
-shortcut = SubResource( 4 )
+[sub_resource type="ShortCut" id=6]
+shortcut = SubResource( 5 )
 
-[sub_resource type="InputEventAction" id=6]
+[sub_resource type="InputEventAction" id=7]
 action = "alt_b"
 
-[sub_resource type="ShortCut" id=7]
-shortcut = SubResource( 6 )
+[sub_resource type="ShortCut" id=8]
+shortcut = SubResource( 7 )
 
 [node name="PainelPerguntas" type="CanvasLayer"]
 layer = 4
@@ -116,9 +116,9 @@ script = ExtResource( 4 )
 [node name="_anim" type="AnimationPlayer" parent="."]
 autoplay = "SETUP"
 anims/SETUP = SubResource( 1 )
-anims/end = SubResource( 8 )
-anims/in = SubResource( 2 )
-anims/out = SubResource( 3 )
+anims/end = SubResource( 2 )
+anims/in = SubResource( 3 )
+anims/out = SubResource( 4 )
 
 [node name="Panel" type="Panel" parent="."]
 anchor_left = 0.56
@@ -203,7 +203,7 @@ size_flags_vertical = 3
 shortcut_in_tooltip = false
 action_mode = 0
 keep_pressed_outside = true
-shortcut = SubResource( 5 )
+shortcut = SubResource( 6 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button"]
 anchor_right = 1.0
@@ -245,7 +245,7 @@ size_flags_vertical = 3
 shortcut_in_tooltip = false
 action_mode = 0
 keep_pressed_outside = true
-shortcut = SubResource( 7 )
+shortcut = SubResource( 8 )
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/VBoxContainer/Button2"]
 anchor_right = 1.0

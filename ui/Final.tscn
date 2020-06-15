@@ -103,6 +103,7 @@ tracks/3/keys = {
 }
 
 [sub_resource type="Animation" id=3]
+resource_name = "trans"
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
 tracks/0/interp = 1
@@ -179,14 +180,14 @@ __meta__ = {
 anchor_left = 0.09
 anchor_top = 0.112
 anchor_right = 0.91
-anchor_bottom = 0.85
+anchor_bottom = 0.95
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
 margin_right = 692.0
-margin_bottom = 797.0
+margin_bottom = 905.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -212,9 +213,9 @@ margin_right = 692.0
 margin_bottom = 108.0
 
 [node name="Declaracao" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
-margin_top = 371.0
+margin_top = 425.0
 margin_right = 692.0
-margin_bottom = 405.0
+margin_bottom = 459.0
 size_flags_horizontal = 3
 size_flags_vertical = 6
 text = "Declaracao de final"
@@ -222,9 +223,9 @@ align = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
-margin_top = 669.0
+margin_top = 777.0
 margin_right = 692.0
-margin_bottom = 797.0
+margin_bottom = 905.0
 rect_min_size = Vector2( 0, 128 )
 size_flags_horizontal = 3
 
