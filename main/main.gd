@@ -44,14 +44,13 @@ func _on_map_started():
 	add_child(map)
 	car = car_scn.instance()
 	add_child(car)
-#	per = load("res://ui/PainelPerguntas.tscn").instance()
 
 
 func _on_finished_questions(anim_name):
 	if anim_name == "trans":
 		car.free()
 		map.free()
-#		inst_per.free()
+		per.get_node("_anim").play_backwards("end")
 
 func _on_menu_animation_finished(anim_name):
 	if anim_name == "out":
