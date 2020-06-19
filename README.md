@@ -1,3 +1,7 @@
+# Jogar
+[GitHub Pages](https://frisney.github.io/LGPD)
+[Windows native](https://github.com/FRisney/LGPD/releases/download/v1.4.1/LGPD.exe)
+
 # Editar
 1. Baixar e extrair [LGPD-master.zip](https://github.com/FRisney/LGPD/archive/master.zip).
 2. Baixar [Godot Standard Version 64-bit](https://downloads.tuxfamily.org/godotengine/3.2.1/Godot_v3.2.1-stable_win64.exe.zip).
